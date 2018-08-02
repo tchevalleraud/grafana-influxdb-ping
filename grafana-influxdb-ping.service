@@ -1,0 +1,9 @@
+[Unit]
+Description=ping to influxDB
+After=network.target influxdb.service
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/grafana-influxdb-ping
+User=root
+Group=root

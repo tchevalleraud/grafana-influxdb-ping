@@ -1,0 +1,19 @@
+[influxdb]
+        probe_name  = "localhost"
+        address     = "http://127.0.0.1:8086"
+        database    = "ping"
+        measurement = "ping"
+        username    = "ping"
+        password    = "ping"
+
+[options]
+        retry    = "-r 1"
+        summary  = "-Q 10"
+        interval = "-t 1000"
+
+[hosts]
+        hosts = [
+                "8.8.8.8",
+                "8.8.4.4",
+                "1.1.1.1",
+        ]
